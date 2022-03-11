@@ -13,6 +13,8 @@
 #' irr(c(1000,-353.5304,-353.5304,-353.5304))$IRR * 12
 irr <- function(x, period = 1, starting.value = .1){
 
+  # https://stackoverflow.com/questions/29781785/computing-irr-using-optim
+
   ### This should detect the number of sign changes.  Should correctly not warn if there are many negative cash flows (so long as there is only 1 change in sign).
 
   irr.func <- function(r){ ( sum(x / (1 + r)^{0:(length(x)-1)}) )^2 }

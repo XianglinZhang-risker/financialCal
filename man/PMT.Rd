@@ -7,13 +7,21 @@
 PMT(rate, nper, pv, fv = 0, type = 0)
 }
 \arguments{
-\item{type}{}
+\item{rate}{Required. Lending rates.}
+
+\item{nper}{Required. The total number of payments for this loan.}
+
+\item{pv}{Required. Present value, or the sum of what a series of future payments are worth now, is also called principal.}
+
+\item{fv}{Optional. The future value, or the expected cash balance after the last payment. If fv is omitted, its value is assumed to be 0 (zero), i.e. the future value of the loan is 0.}
+
+\item{type}{Optional. The number 0 (zero) or 1 indicates the payout time.}
 }
 \value{
 
 }
 \description{
-Instalment of Loan
+PMT is a financial function that calculates the payment on a loan based on a fixed payment and a fixed interest rate.
 }
 \examples{
 PMT(0.36/12, 12*1, 1000)
