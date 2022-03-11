@@ -7,7 +7,7 @@ Authors@R:
            email = "2282017841@qq.com",
            role = c("aut", "cre")
     )
-Description: What the package does (one paragraph).
+Description: PMT, IPMT, PPMT are encapsulated according to Excel financial functions, and also supports irr function and amortization table function.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
