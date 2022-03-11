@@ -6,7 +6,7 @@ PMT, IPMT, PPMT are encapsulated according to Excel financial functions, and als
 
 ## 安装 Install
 
-cran   : 暂未提交
+cran   : 已提交审核
 
 github :
 ```R
